@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Support" rowHeight="131" id="KGk-i7-Jjw" customClass="Support" customModule="Happy_Meals_UI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teL-t2-hmR">
+                        <rect key="frame" x="384" y="47" width="31" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="A8E-vp-clU"/>
+                            <constraint firstAttribute="height" constant="37" id="kZi-tS-TTX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="greaterthan" catalog="system">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWt-y8-gGN">
+                        <rect key="frame" x="25" y="55" width="300" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="7RG-tp-e1g"/>
+                            <constraint firstAttribute="height" constant="21" id="muu-nL-TNE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="teL-t2-hmR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="akr-94-ZV7"/>
+                    <constraint firstItem="vWt-y8-gGN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iiD-cf-2Jq"/>
+                    <constraint firstItem="vWt-y8-gGN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="vsj-Xs-yEW"/>
+                    <constraint firstAttribute="trailing" secondItem="teL-t2-hmR" secondAttribute="trailing" constant="34" id="yMY-i8-VBN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblSupport" destination="vWt-y8-gGN" id="9R8-Ou-OUR"/>
+            </connections>
+            <point key="canvasLocation" x="-260" y="-56"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="greaterthan" catalog="system" width="128" height="111"/>
+    </resources>
+</document>
